@@ -1179,7 +1179,7 @@ main.container > h1 + p { /* Selects paragraph immediately following h1 in main 
 /* Why Matters Section */
 .why-matters {
   padding: var(--section-padding);
-  background-color: #f9fafb; /* Very light grey */
+  background-color: #cfcfcf; /* Very light grey */
 }
 
 .why-content {
