@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="container footer-grid">
                 <div class="footer-section footer-company">
                     <h3>BRANDEXTENDERS</h3>
-                    <p>456 Sample Road<br>Example Town, EX 67890<br>(987) 654-3210</p>
+                    <p>1220 L St. NW<br>Washington, DC 20005<br>(877) 633-1133</p>
                 </div>
                 <div class="footer-section footer-links">
                     <h3>Quick Links</h3>
