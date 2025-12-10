@@ -1,8 +1,8 @@
 /* Centralized Navigation Styles - Include in all pages */
 :root {
-  --primary-color: #23456C; /* PromoMonster Green */
+  --primary-color: #CF0545; /* PromoMonster Green */
   --secondary-color: #000000; /* Black */
-  --brand-orange: #23456C; /* Alias for primary color */
+  --brand-orange: #CF0545; /* Alias for primary color */
 }
 
 /* Fix navigation menu height issue and center alignment - 20% smaller */

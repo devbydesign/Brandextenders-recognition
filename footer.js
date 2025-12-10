@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <footer>
             <div class="container footer-grid">
                 <div class="footer-section footer-company">
-                    <h3>RBB Marketing</h3>
+                    <h3>BRANDEXTENDERS</h3>
                     <p>456 Sample Road<br>Example Town, EX 67890<br>(987) 654-3210</p>
                 </div>
                 <div class="footer-section footer-links">

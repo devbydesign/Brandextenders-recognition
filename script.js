@@ -603,8 +603,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isAlreadyAdded) {
           modalAddToProgram.innerHTML = '✓ Added';
           modalAddToProgram.disabled = true;
-          modalAddToProgram.style.setProperty('background-color', '#23456C', 'important');
-          modalAddToProgram.style.setProperty('border-color', '#23456C', 'important');
+          modalAddToProgram.style.setProperty('background-color', '#CF0545', 'important');
+          modalAddToProgram.style.setProperty('border-color', '#CF0545', 'important');
           modalAddToProgram.style.setProperty('color', 'white', 'important');
           modalAddToProgram.style.setProperty('opacity', '1', 'important');
         } else {
@@ -924,8 +924,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalAddToProgram.innerHTML = '<i class="fas fa-check"></i> Added';
                 modalAddToProgram.classList.add('added');
                 modalAddToProgram.disabled = true;
-                modalAddToProgram.style.setProperty('background-color', '#23456C', 'important');
-                modalAddToProgram.style.setProperty('border-color', '#23456C', 'important');
+                modalAddToProgram.style.setProperty('background-color', '#CF0545', 'important');
+                modalAddToProgram.style.setProperty('border-color', '#CF0545', 'important');
                 modalAddToProgram.style.setProperty('color', 'white', 'important');
                 modalAddToProgram.style.setProperty('opacity', '1', 'important');
               }
@@ -1413,7 +1413,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if(planSummarySection) {
-            const summaryLogo = `<img src="assets/images/Logo.png" alt="RBB Marketing Logo" style="max-width: 200px; margin-bottom: 20px;">`;
+            const summaryLogo = `<img src="assets/images/Logo.png" alt="BRANDEXTENDERS Logo" style="max-width: 200px; margin-bottom: 20px;">`;
             const whatsNext = `
                 <h3>What's Next:</h3>
                 <ul>
@@ -1552,7 +1552,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const subject = `Program Plan Submission from ${firstName} ${lastName}`;
         const body = `New Program Plan Request:\n\nSelected Modules:\n- ${selectedModuleNames.join('\n- ')}\n\nContact Information:\nName: ${firstName} ${lastName}\nCompany: ${companyName}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}`;
-        const mailtoLink = `mailto:rbadiner@rbbmarketing.com,theresa@stayvisible.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:chrisw@brandextenders.com,rbadiner@rbbmarketing.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
         setTimeout(() => {
             window.location.href = mailtoLink;
