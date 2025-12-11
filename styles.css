@@ -163,6 +163,7 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--primary-color);
   background: color-mix(in srgb, var(--offset-color) 10%, transparent);
+  font-weight: bold !important;
 }
 
 nav ul li a.active {
@@ -3224,6 +3225,8 @@ main.container h1,
 main.container h2,
 main.container h3 {
   color: #000000 !important;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Ensure section headings in feature pages are black */
