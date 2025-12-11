@@ -9,7 +9,7 @@
   --medium-color: #f0f2f5; /* Light grey for backgrounds/borders */
   --text-muted: #666666; /* Muted text color */
   --success-color: #CF0545; /* BRANDEXTENDERS Blue for checkmarks etc. */
-  --offset-color: color-mix(in srgb, var(--primary-color), black 0%);
+  --offset-color: color-mix(in srgb, var(--primary-color), black 70%);
   --border-radius: 6px;
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-secondary: 'Georgia', serif; /* For select headings or accents */
@@ -93,7 +93,7 @@ ul, ol {
 /* Header */
 header {
   background-color: var(--light-color);
-  padding: 1rem 0;
+  padding: 0.45rem 0;
   color: var(--secondary-color);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
@@ -117,7 +117,7 @@ header .container {
 }
 
 .logo img {
-  height: 56px;
+  height: 76px;
   width: auto;
   display: block;
 }
@@ -125,7 +125,7 @@ header .container {
 /* Adjust logo size for mobile */
 @media (max-width: 768px) {
   .logo img {
-    height: 43px;
+    height: 58px;
   }
 }
 
@@ -1179,7 +1179,7 @@ main.container > h1 + p { /* Selects paragraph immediately following h1 in main 
 /* Why Matters Section */
 .why-matters {
   padding: var(--section-padding);
-  background-color: #f9fafb; /* Very light grey */
+  background-color: #cfcfcf; /* Very light grey */
 }
 
 .why-content {
@@ -3595,7 +3595,7 @@ main.container h3 {
 }
 
 .hero-text-overlay .overlay-background {
-  background-color: rgba(35,69,108,0.7) !important;
+  background-color: rgba(124, 0, 39, 0.753) !important;
   border-radius: clamp(15px, 1vw + 10px, 25px) !important; /* Scale border radius */
   padding: clamp(0.4rem, 1.5vw + 0.2rem, 1.5rem) !important; /* More aggressive scaling */
   display: inline-block !important; /* Center the background on text */
