@@ -92,7 +92,7 @@ ul, ol {
 
 /* Header */
 header {
-  background-color: var(--light-color);
+  background-color: #333f48; 
   padding: 0.45rem 0;
   color: var(--secondary-color);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -150,7 +150,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--secondary-color);
+  color: #fff;
   text-decoration: none;
   transition: all var(--transition-speed);
   padding: 0.75rem 1rem;
