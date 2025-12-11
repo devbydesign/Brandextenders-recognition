@@ -1179,7 +1179,7 @@ main.container > h1 + p { /* Selects paragraph immediately following h1 in main 
 /* Why Matters Section */
 .why-matters {
   padding: var(--section-padding);
-  background-color: #cfcfcf; /* Very light grey */
+  background-color: #e4e4e4; /* Very light grey */
 }
 
 .why-content {
@@ -1535,9 +1535,21 @@ main.container > h1 + p { /* Selects paragraph immediately following h1 in main 
 
 /* --- Build Your Program Page Styles --- */
 
+.program-builder-background {
+  background-image: url('assets/images/ConstructionBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
 .program-builder-section {
   padding: 3rem 0;
   border-bottom: 1px solid var(--medium-color);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(1px);
 }
 
 .program-builder-section h2,
