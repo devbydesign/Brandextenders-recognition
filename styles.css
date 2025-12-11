@@ -3214,6 +3214,7 @@ main.container h2,
 main.container h3 {
   color: #000000 !important;
   font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Ensure section headings in feature pages are black */
