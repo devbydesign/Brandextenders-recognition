@@ -1548,7 +1548,7 @@ main.container > h1 + p { /* Selects paragraph immediately following h1 in main 
 .program-builder-section {
   padding: 3rem 0;
   border-bottom: 1px solid var(--medium-color);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(1px);
 }
 
