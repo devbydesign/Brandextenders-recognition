@@ -1019,14 +1019,24 @@
           <input name="headerImgPath" type="hidden" value="https://norisk.webdevbydesign.com/img/BE-header-simple.png">
           <input name="footerImgPath" type="hidden" value="https://norisk.webdevbydesign.com/img/footer-simple.png">
           <div class="modules-grid">
-            <div class="program-module" draggable="true" data-module-id="welcome" data-tooltip="Onboard new hires with essential gear and a warm welcome.">
+             <div class="program-module" draggable="true" data-module-id="incentives" data-tooltip="Motivate specific behaviors with tangible rewards (merch, gift cards, experiences).">
+              <div class="module-title">
+                <i class="fas fa-concierge-bell"></i>
+                Incentive Programs
+              </div>
+              <input type="checkbox" name="planList" id="incentives" value="Incentive Programs" class="hidden">
+              <p class="module-summary">Drive desired behaviors with meaningful rewards.</p>
+              <button class="see-details-btn" data-feature="incentives">View Ideas</button>
+            </div>
+            
+            <div class="program-module" draggable="true" data-module-id="onboarding" data-tooltip="Onboard new hires with essential gear and a warm welcome.">
               <div class="module-title">
                 <i class="fas fa-gift"></i>
-                Welcome Kits
+                Onboarding
               </div>
-              <input type="checkbox" name="planList" id="welcome" value="Welcome Kits" class="hidden">
-              <p class="module-summary">Create memorable first impressions for new team members.</p>
-              <button class="see-details-btn" data-feature="welcome">View Ideas</button>
+              <input type="checkbox" name="planList" id="onboarding" value="Onboarding" class="hidden">
+              <p class="module-summary">Promotional merch makes onboarding and training more engaging, memorable</p>
+              <button class="see-details-btn" data-feature="onboarding">View Ideas</button>
             </div>
             <div class="program-module" draggable="true" data-module-id="anniversary" data-tooltip="Celebrate milestones with tiered awards based on years of service.">
               <div class="module-title">
@@ -1046,14 +1056,14 @@
               <p class="module-summary">Recognize and reward outstanding achievements.</p>
               <button class="see-details-btn" data-feature="performance">View Ideas</button>
             </div>
-            <div class="program-module" draggable="true" data-module-id="wellness" data-tooltip="Promote health and well-being with fitness challenges and incentives.">
+            <div class="program-module" draggable="true" data-module-id="number" data-tooltip="Promote health and well-being with fitness challenges and incentives.">
               <div class="module-title">
                 <i class="fas fa-heartbeat"></i>
-                Wellness Programs
+                Number of Days Since Incident
               </div>
-              <input type="checkbox" name="planList" id="wellness" value="Wellness Programs" class="hidden">
-              <p class="module-summary">Support employee health and work-life balance.</p>
-              <button class="see-details-btn" data-feature="wellness">View Ideas</button>
+              <input type="checkbox" name="planList" id="number" value="Number of Days Since Incident" class="hidden">
+              <p class="module-summary">Celebrate safety records.</p>
+              <button class="see-details-btn" data-feature="number">View Ideas</button>
             </div>
             <div class="program-module" draggable="true" data-module-id="spot" data-tooltip="Enable managers to give immediate recognition for great work.">
               <div class="module-title">
@@ -1091,24 +1101,8 @@
               <p class="module-summary">Celebrate specific accomplishments formally.</p>
               <button class="see-details-btn" data-feature="awards">View Ideas</button>
             </div>
-            <div class="program-module" draggable="true" data-module-id="incentives" data-tooltip="Motivate specific behaviors with tangible rewards (merch, gift cards, experiences).">
-              <div class="module-title">
-                <i class="fas fa-concierge-bell"></i>
-                Incentive Programs
-              </div>
-              <input type="checkbox" name="planList" id="incentives" value="Incentive Programs" class="hidden">
-              <p class="module-summary">Drive desired behaviors with meaningful rewards.</p>
-              <button class="see-details-btn" data-feature="incentives">View Ideas</button>
-            </div>
-            <div class="program-module" draggable="true" data-module-id="attendance" data-tooltip="Recognize perfect attendance and improvement to build reliability culture.">
-              <div class="module-title">
-                <i class="fas fa-calendar-check"></i>
-                Attendance Recognition
-              </div>
-              <input type="checkbox" name="planList" id="attendance" value="Attendance Recognition" class="hidden">
-              <p class="module-summary">Celebrate reliable team members and reduce absenteeism.</p>
-              <button class="see-details-btn" data-feature="attendance">View Ideas</button>
-            </div>
+           
+            
             <div class="program-module" draggable="true" data-module-id="safety" data-tooltip="Promote workplace safety through recognition and create safety champions.">
               <div class="module-title">
                 <i class="fas fa-shield-alt"></i>
@@ -1128,14 +1122,14 @@
               <button class="see-details-btn" data-feature="community">View Ideas</button>
             </div>
 
-            <div class="program-module" draggable="true" data-module-id="volunteer" data-tooltip="Celebrate employee volunteerism and civic engagement to foster purpose-driven culture.">
+            <div class="program-module" draggable="true" data-module-id="ppe" data-tooltip="Celebrate employee volunteerism and civic engagement to foster purpose-driven culture.">
               <div class="module-title">
                 <i class="fas fa-hand-holding-heart"></i>
-                Volunteer Recognition
+                Personal Protection Equipment
               </div>
-              <input type="checkbox" name="planList" id="volunteer" value="Volunteer Recognition" class="hidden">
-              <p class="module-summary">Honor those who give back to their communities.</p>
-              <button class="see-details-btn" data-feature="volunteer">View Ideas</button>
+              <input type="checkbox" name="planList" id="ppe" value="Personal Protection Equipment" class="hidden">
+              <p class="module-summary">Keep your team members save with quality equipment.</p>
+              <button class="see-details-btn" data-feature="ppe">View Ideas</button>
             </div>
             <div class="program-module" draggable="true" data-module-id="custom" data-tooltip="Create a custom recognition program tailored to your unique needs.">
               <div class="module-title">
