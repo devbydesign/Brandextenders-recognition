@@ -6,7 +6,7 @@ Steps to set up a new recognition website:
 1. Fork from recognition-b2b or healthcare repo.
 2. Search and replace 'RBB Marketing' with the new company name.
 3. Searh and replace 'Rick Badiner' with the new affiliate name.
-4. Do the same with their main phone number and contact email address. (instead of rbadiner1@rbbmarketnig.com)
+4. Do the same with their main phone number and contact email address. (instead of rbadiner@rbbmarketing.com)
 5. Edit contact.html and finish updating information and replace the social media links.
 6. Replace favicon image and main logo image in the header area.
 7. Replace primary colors.
