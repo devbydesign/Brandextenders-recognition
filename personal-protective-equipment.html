@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vital Statistics - Employee Recognition Research</title>
+  <title>Personal Protective Equipment | Employee Recognition Programs</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -11,10 +11,31 @@
   <!-- Load centralized navigation BEFORE your main script -->
   <script src="navigation.js"></script>
   <script src="script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
+</head>
+<body>
+  <!-- Navigation will be inserted here automatically by navigation.js -->
+
+  <main class="container">
+    <!-- Personal Protective Equipment Header -->
+    <section class="resources-header">
+      <div class="text-content">
+        <h1>Personal Protective Equipment</h1>
+        <p>Recognize employees who consistently use and maintain PPE to create safety role models and reduce workplace injuries.</p>
+        <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+          <button class="btn btn-primary-subtle"
+                  onclick="handleFeatureAdditionWithFeedback(this, event)"
+                  data-feature-name="Personal Protective Equipment"
+                  data-href="build-program.html"
+                  style="font-size: 1.1rem; padding: 0.8rem 1.6rem;">
+            <i class="fas fa-plus-circle"></i> Add to My Program
+          </button>
+          <a href="contact.html?inquiry=ppe" class="btn btn-outline">
+            <i class="fas fa-comments"></i> Chat with Our Experts
+          </a>
+        </div>
+      </div>
+      <img src="assets/images/PersonalProtectiveEquipment.png" alt="Personal protective equipment and safety gear for workplace safety.">
+    </section>
     .statistics-hero {
       background: linear-gradient(135deg, #e5e7f0 0%, #eff0f5 100%);
       color: #000000;
@@ -207,12 +228,73 @@
         font-size: 2rem;
       }
     }
-  </style>
-</head>
-<body>
-  <!-- Navigation will be inserted here automatically by navigation.js -->
+    <!-- Why PPE Recognition Matters -->
+    <section class="content-section">
+      <h2>Why PPE Recognition Drives Safety Culture</h2>
+      <div class="main-grid">
+        <div class="info-card">
+          <i class="fas fa-shield-alt card-icon"></i>
+          <h3>Prevent Workplace Injuries</h3>
+          <p>Proper personal protective equipment usage can <strong style="color: var(--brand-orange);">prevent up to 70% of workplace injuries</strong> according to OSHA research and safety standards.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-dollar-sign card-icon"></i>
+          <h3>Reduce Compensation Costs</h3>
+          <p>Companies with strong PPE recognition programs see <strong style="color: var(--brand-orange);">40% lower workers' compensation costs</strong> and improved safety outcomes.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-users card-icon"></i>
+          <h3>Create Safety Role Models</h3>
+          <p>When employees are recognized for proper PPE usage, they become safety leaders who influence others and create a positive feedback loop of safe behaviors.</p>
+        </div>
+      </div>
 
-  <main>
+      <!-- CTA Link to Vital Statistics -->
+      <div class="section-cta">
+        <a href="vital-statistics.html" class="vital-stats-cta">
+          <i class="fas fa-chart-bar"></i>
+          See our Vital Statistics page for more PPE safety data!
+        </a>
+      </div>
+    </section>
+
+    <!-- PPE Products -->
+    <section class="content-section">
+      <h2>Recognize PPE Champions</h2>
+      <p class="section-intro">
+        Discover our selection of safety awards and recognition items that celebrate proper PPE usage and maintenance.
+      </p>
+
+      <div class="compact-grid">
+        <div class="compact-card product-card" data-title="Safety Gear Recognition" data-img="assets/images/PersonalProtectiveEquipment.png" data-desc="Custom awards and recognition items that celebrate employees who consistently demonstrate proper PPE usage and safety leadership.">
+          <img src="assets/images/PersonalProtectiveEquipment.png" alt="Safety Gear Recognition">
+          <h4>Safety Gear Recognition</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+        <div class="compact-card product-card" data-title="Safety Awards" data-img="assets/images/GlassAward.PNG" data-desc="Professional safety awards that recognize employees for their commitment to proper PPE usage and workplace safety standards.">
+          <img src="assets/images/GlassAward.PNG" alt="Safety Awards">
+          <h4>Safety Awards</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+        <div class="compact-card product-card" data-title="Recognition Badges" data-img="assets/images/PinsAndBadges.PNG" data-desc="Custom safety badges and pins that identify PPE champions and safety leaders throughout your organization.">
+          <img src="assets/images/PinsAndBadges.PNG" alt="Recognition Badges">
+          <h4>Recognition Badges</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+        <div class="compact-card product-card" data-title="Safety Apparel" data-img="assets/images/Apparel2.png" data-desc="Branded safety apparel that recognizes team members who model proper PPE usage and contribute to a safer workplace.">
+          <img src="assets/images/Apparel2.png" alt="Safety Apparel">
+          <h4>Safety Apparel</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Step CTA Section -->
+    <div class="next-step-section next-step-within-products" style="background-color: transparent; padding-top: 1rem; padding-bottom: 2rem;">
+      <p>Ready to recognize your PPE champions? Let's build your safety recognition program!</p>
+      <a href="build-program.html" class="btn">Start Building Your Program</a>
+    </div>
+  </main>
     <section class="statistics-hero">
       <div class="container">
         <h1>Vital Statistics</h1>
@@ -223,11 +305,11 @@
     <section class="statistics-content">
       <div class="container">
         
-        <!-- Onboarding Section -->
+        <!-- Welcome Kits Section -->
         <div class="feature-section">
           <div class="feature-header">
             <i class="fas fa-gift"></i>
-            <h2>Onboarding</h2>
+            <h2>Welcome Kits & Onboarding</h2>
           </div>
           <div class="stat-grid">
             <div class="stat-card">
@@ -615,66 +697,6 @@
           </div>
         </div>
 
-        <!-- Number of Days Since Incident Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-calendar-times"></i>
-            <h2>Number of Days Since Incident</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">52%</span>
-              <div class="stat-description">fewer workplace incidents are experienced by companies with robust safety recognition programs.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">$170B</span>
-              <div class="stat-description">annual cost of workplace injuries to U.S. employers in lost productivity, medical expenses, and workers' compensation.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">Weekly</span>
-              <div class="stat-description">recognition is most effective for reinforcing positive safety behaviors and making employees feel their contributions to workplace safety are valued.</div>
-              <div class="stat-source">Source: <a href="https://www.gallup.com/workplace/236441/ways-promote-employee-wellbeing.aspx" target="_blank" class="source-link">Gallup</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">85%</span>
-              <div class="stat-description">higher rate of safety suggestions in workplaces that actively recognize and reward safety contributions.</div>
-              <div class="stat-source">Source: <a href="https://www.workplacesafety.com/" target="_blank" class="source-link">Workplace Safety Research</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Personal Protective Equipment Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-shield-alt"></i>
-            <h2>Personal Protective Equipment</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">70%</span>
-              <div class="stat-description">of workplace injuries could be prevented with proper personal protective equipment usage.</div>
-              <div class="stat-source">Source: <a href="https://www.osha.gov/personal-protective-equipment" target="_blank" class="source-link">OSHA</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">40%</span>
-              <div class="stat-description">lower workers' compensation costs are reported by companies with strong safety recognition programs including PPE compliance.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">85%</span>
-              <div class="stat-description">higher safety suggestion rates in workplaces that recognize proper PPE usage and maintenance.</div>
-              <div class="stat-source">Source: <a href="https://www.workplacesafety.com/" target="_blank" class="source-link">Workplace Safety Research</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">$3.27</span>
-              <div class="stat-description">average return for every $1 invested in workplace safety programs, including PPE training and recognition.</div>
-              <div class="stat-source">Source: <a href="https://www.cdc.gov/pcd/issues/2010/jul/10_0013.htm" target="_blank" class="source-link">CDC</a></div>
-            </div>
-          </div>
-        </div>
-
         <!-- Key Insights Section -->
         <div class="key-insights">
           <h3>Key Insights from Recognition Data</h3>
@@ -688,8 +710,8 @@
               <p>Immediate recognition increases behavior repetition by 70%, making spot recognition a powerful tool for reinforcing positive behaviors.</p>
             </div>
             <div class="insight-item">
-              <h4>Safety ROI</h4>
-              <p>Incident-free recognition reduces workplace incidents by 52% while PPE recognition prevents up to 70% of injuries, delivering $170B in annual cost savings for U.S. employers.</p>
+              <h4>Safety & Attendance ROI</h4>
+              <p>Safety recognition programs reduce incidents by 52% while attendance recognition cuts unscheduled absences by 41%, creating substantial business value.</p>
             </div>
             <div class="insight-item">
               <h4>Purpose-Driven Engagement</h4>
@@ -743,6 +765,12 @@
       observer.observe(card);
     });
   </script>
+
+  <button class="resources-sticky-cta" onclick="handleFeatureAdditionWithFeedback(this, event)" data-feature-name="Personal Protective Equipment" data-href="build-program.html">
+    <i class="fas fa-plus-circle"></i>
+    Add Personal Protective Equipment to My Program
+  </button>
+
   <script src="modal.js"></script>
   <script src="footer.js"></script>
 </body>

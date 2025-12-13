@@ -340,7 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
           // Map feature name to module ID
           const featureToModuleId = {
             'Welcome Kits': 'welcome',
-            'Years of Service Recognition': 'anniversary', 
+            'Onboarding': 'onboarding',
+            'Years of Service Recognition': 'anniversary',
             'Performance Recognition': 'performance',
             'Wellness Programs': 'wellness',
             'Spot Recognition': 'spot',
@@ -351,7 +352,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'Attendance Recognition': 'attendance',
             'Safety Recognition': 'safety',
             'Community Impact': 'community',
-            'Volunteer Recognition': 'volunteer'
+            'Volunteer Recognition': 'volunteer',
+            'Number of Days Since Incident': 'number',
+            'Personal Protective Equipment': 'ppe'
           };
           
           const newModuleId = featureToModuleId[featureName];
@@ -471,6 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Convert module IDs back to feature names for comparison
         const moduleToFeatureName = {
           'welcome': 'Welcome Kits',
+          'onboarding': 'Onboarding',
           'anniversary': 'Years of Service Recognition',
           'performance': 'Performance Recognition',
           'wellness': 'Wellness Programs',
@@ -482,7 +486,9 @@ document.addEventListener('DOMContentLoaded', function() {
           'attendance': 'Attendance Recognition',
           'safety': 'Safety Recognition',
           'community': 'Community Impact',
-          'volunteer': 'Volunteer Recognition'
+          'volunteer': 'Volunteer Recognition',
+          'number': 'Number of Days Since Incident',
+          'ppe': 'Personal Protective Equipment'
         };
         canvasFeatures = moduleIds.map(id => moduleToFeatureName[id]).filter(Boolean);
       }
@@ -583,6 +589,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentFeatureKey && currentFeatureKey !== 'custom') {
         const featureNameMap = {
           'welcome': 'Welcome Kits',
+          'onboarding': 'Onboarding',
           'service': 'Years of Service Recognition',
           'performance': 'Performance Recognition',
           'wellness': 'Wellness Programs',
@@ -594,7 +601,9 @@ document.addEventListener('DOMContentLoaded', function() {
           'attendance': 'Attendance Recognition',
           'safety': 'Safety Recognition',
           'community': 'Community Impact',
-          'volunteer': 'Volunteer Recognition'
+          'volunteer': 'Volunteer Recognition',
+          'number': 'Number of Days Since Incident',
+          'ppe': 'Personal Protective Equipment'
         };
         
         const featureName = featureNameMap[currentFeatureKey];
@@ -1156,7 +1165,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Feature name to module ID mapping
       const featureToModuleId = {
         'Welcome Kits': 'welcome',
-        'Years of Service Recognition': 'anniversary', 
+        'Onboarding': 'onboarding',
+        'Years of Service Recognition': 'anniversary',
         'Performance Recognition': 'performance',
         'Wellness Programs': 'wellness',
         'Spot Recognition': 'spot',
@@ -1167,7 +1177,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'Attendance Recognition': 'attendance',
         'Safety Recognition': 'safety',
         'Community Impact': 'community',
-        'Volunteer Recognition': 'volunteer'
+        'Volunteer Recognition': 'volunteer',
+        'Number of Days Since Incident': 'number',
+        'Personal Protective Equipment': 'ppe'
       };
 
       let featuresAdded = false;
@@ -1273,6 +1285,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Feature descriptions for the form display
         const featureDescriptions = {
           'Welcome Kits': 'A vital first step to improving your employee well-being and efficiency',
+          'Onboarding': 'Transforming new hires into engaged, productive team members through structured programs',
           'Years of Service Recognition': 'Building loyalty and recognition that strengthens your organizational foundation',
           'Performance Recognition': 'Driving excellence through targeted rewards that motivate and inspire',
           'Wellness Programs': 'Promoting health and vitality that enhances both personal and professional success',
@@ -1284,7 +1297,9 @@ document.addEventListener('DOMContentLoaded', function() {
           'Attendance Recognition': 'Building reliability culture and reducing absenteeism through consistent recognition',
           'Safety Recognition': 'Creating safety champions and preventing workplace incidents through proactive recognition',
           'Community Impact': 'Building purpose-driven culture through recognition of volunteer and community engagement',
-          'Volunteer Recognition': 'Celebrating employee volunteerism to enhance engagement and organizational purpose'
+          'Volunteer Recognition': 'Celebrating employee volunteerism to enhance engagement and organizational purpose',
+          'Number of Days Since Incident': 'Celebrating safety records and building incident-free momentum in your workplace',
+          'Personal Protective Equipment': 'Recognizing PPE compliance and creating safety role models for injury prevention'
         };
 
         formFeaturesList.innerHTML = '';
@@ -1429,6 +1444,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Feature links mapping for Browse Incentives buttons
             const featureLinks = {
                 'Welcome Kits': 'https://www.rbbmarketing.com/:quicksearch.htm?quicksearchbox=Welcome+Kits&LoP=&HiP=',
+                'Onboarding': 'https://www.rbbmarketing.com/:quicksearch.htm?quicksearchbox=Welcome+Kits&LoP=&HiP=',
                 'Years of Service': 'https://www.rbbmarketing.com/:quicksearch.htm?quicksearchbox=service+award&LoP=&HiP=',
                 'Performance Bonuses': 'https://rbbmarketing-clientportal.com/sub_category_post/incentives-employee/',
                 'Wellness Programs': 'https://promomonster-clientportal.com/sub_category_post/health-and-wellness-all-products/',
@@ -1441,7 +1457,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Safety Recognition': 'https://promomonster-clientportal.com/sub_category_post/employee-appreciation-merchandise-apparel/',
                 'Community Impact': 'https://promomonster-clientportal.com/sub_category_post/incentives-all-products/',
                 'Custom Recognition': 'https://promomonster-clientportal.com/sub_category_post/incentives-all-products/',
-                'Volunteer Recognition': 'https://promomonster-clientportal.com/sub_category_post/incentives-all-products/'
+                'Volunteer Recognition': 'https://promomonster-clientportal.com/sub_category_post/incentives-all-products/',
+                'Number of Days Since Incident': 'https://promomonster-clientportal.com/sub_category_post/employee-appreciation-merchandise-apparel/',
+                'Personal Protective Equipment': 'https://promomonster-clientportal.com/sub_category_post/employee-appreciation-merchandise-apparel/'
             };
             
             summaryModulesList.innerHTML = selectedModuleNames.map(name => {
@@ -1696,6 +1714,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getFeatureKeyFromName(name) {
         const nameMapping = {
             'Welcome Kits': 'welcome',
+            'Onboarding': 'onboarding',
             'Years of Service Recognition': 'service',
             'Performance Recognition': 'performance',
             'Wellness Programs': 'wellness',
@@ -1709,6 +1728,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'Safety Recognition': 'safety',
             'Community Impact': 'community',
             'Volunteer Recognition': 'volunteer',
+            'Number of Days Since Incident': 'number',
+            'Personal Protective Equipment': 'ppe',
             // Legacy fallbacks for old naming
             'Years of Service': 'service',
             'Performance Bonuses': 'performance'
@@ -1725,23 +1746,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Feature modal data for See Details functionality
     const featureData = {
-      welcome: {
-        title: "Welcome Kits",
+      onboarding: {
+        title: "Onboarding",
         icon: "fas fa-gift",
         description: `
-          <p>First impressions matter more than ever in today's competitive talent market. A thoughtfully crafted welcome kit sets the tone for an employee's entire journey with your organization.</p>
-          
-          <h4>Why Welcome Kits Drive Success</h4>
+          <p>First impressions matter more than ever in today's competitive talent market. A thoughtfully crafted onboarding program sets the tone for an employee's entire journey with your organization, transforming new hires into engaged, productive team members.</p>
+
+          <h4>Why Onboarding Drives Success</h4>
           <!-- Source: https://www.shrm.org/hr-today/news/hr-magazine/pages/0914-onboarding.aspx -->
           <p>Research from the Society for Human Resource Management (SHRM) shows that new employees who went through a structured onboarding program were <span class="stat-highlight stat-tooltip">69% more likely to remain<span class="tooltip-content">Source: SHRM</span></span> with the company for up to three years.</p>
-          
+
           <h4>Proven Benefits</h4>
           <!-- Source: https://www.globenewswire.com/news-release/2011/11/17/459702/238734/en/Onboarding-2011-The-Path-to-Productivity.html -->
-          <p>Organizations with a standard onboarding process see <span class="stat-highlight stat-tooltip">54% greater new-hire productivity<span class="tooltip-content">Source: Aberdeen Group</span></span> and <span class="stat-highlight stat-tooltip">50% greater new-hire retention<span class="tooltip-content">Source: Aberdeen Group</span></span> according to the Aberdeen Group. Your welcome kit becomes the first touchpoint in this critical process.</p>
-          
-          <h4>What Makes Welcome Kits Effective</h4>
-          <p>The most successful welcome kits combine practical items employees will use daily with branded elements that reinforce company culture. From premium drinkware to tech accessories that enhance productivity, each item serves as a daily reminder of belonging.</p>
-          <p><span class="stat-highlight">Customize your onboarding kits</span> to greet new hires with branded merchandise, information packets, and all essentials to start their journey.</p>
+          <p>Organizations with a standard onboarding process see <span class="stat-highlight stat-tooltip">54% greater new-hire productivity<span class="tooltip-content">Source: Aberdeen Group</span></span> and <span class="stat-highlight stat-tooltip">50% greater new-hire retention<span class="tooltip-content">Source: Aberdeen Group</span></span> according to the Aberdeen Group. Effective onboarding becomes the foundation for long-term success.</p>
+
+          <h4>What Makes Onboarding Effective</h4>
+          <p>The most successful onboarding programs combine structured training with cultural integration, practical tools, and meaningful recognition. From comprehensive orientation sessions to branded merchandise that reinforces company values, each element helps new employees feel welcomed and prepared to contribute.</p>
+          <p><span class="stat-highlight">Design your onboarding experience</span> to integrate new hires with training programs, branded merchandise, information packets, and all essentials to start their journey successfully.</p>
         `,
         products: [
           { name: "Tote Bag", image: "assets/images/tote1.jpg" },
@@ -2042,6 +2063,68 @@ document.addEventListener('DOMContentLoaded', function() {
           { name: "Insulated Drinkware", image: "assets/images/Drinkware3.png" }
         ]
       },
+      number: {
+        title: "Number of Days Since Incident",
+        icon: "fas fa-calendar-times",
+        description: `
+          <p>Tracking and celebrating days without workplace incidents creates a powerful culture of safety consciousness. This proactive approach transforms safety from a compliance requirement into a celebrated organizational value that protects employees and drives operational excellence.</p>
+
+          <h4>Why Incident-Free Days Matter</h4>
+          <!-- Source: https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line -->
+          <p>Organizations with strong safety recognition programs experience <span class="stat-highlight stat-tooltip">52% fewer workplace incidents<span class="tooltip-content">Source: National Safety Council</span></span> compared to those without such programs. Celebrating milestone days without incidents reinforces safe behaviors and creates positive momentum toward zero incidents.</p>
+
+          <h4>The Financial Impact of Safety</h4>
+          <!-- Source: https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line -->
+          <p>The National Safety Council reports that workplace injuries cost U.S. employers <span class="stat-highlight stat-tooltip">$170 billion annually<span class="tooltip-content">Source: National Safety Council</span></span> in lost productivity, medical expenses, and workers' compensation. Recognizing days without incidents directly contributes to reducing these costs while building a safety-first culture.</p>
+
+          <h4>Building Safety Champions</h4>
+          <p>Regular recognition of incident-free periods creates safety ambassadors throughout your organization. Employees become proactive about identifying hazards and maintaining safe practices, knowing their contributions to workplace safety are valued and celebrated.</p>
+          <p><span class="stat-highlight">Transform safety into a celebrated achievement</span> with milestone celebrations, safety awards, and recognition programs that honor teams and individuals contributing to incident-free records.</p>
+        `,
+        products: [
+          { name: "Safety Awards", image: "assets/images/UniqueTrophies.png" },
+          { name: "Custom Plaques", image: "assets/images/PlaquesWithStands.png" },
+          { name: "Safety Signage", image: "assets/images/Signage.png" },
+          { name: "Safety Apparel", image: "assets/images/ApparelSweater.png" }
+        ],
+        customizeProducts: [
+          { name: "Safety Merchandise", image: "assets/images/Customized Merchandise.png" },
+          { name: "Safety Bundles", image: "assets/images/bundle3.PNG" },
+          { name: "Recognition Kits", image: "assets/images/kit2.PNG" },
+          { name: "Safety Accessories", image: "assets/images/Pens.png" }
+        ]
+      },
+      ppe: {
+        title: "Personal Protective Equipment",
+        icon: "fas fa-shield-alt",
+        description: `
+          <p>Proper personal protective equipment (PPE) is essential for workplace safety, but compliance alone isn't enough. Recognizing employees who consistently use and maintain their PPE creates a culture where safety becomes a personal responsibility and a point of pride.</p>
+
+          <h4>The Critical Role of PPE Compliance</h4>
+          <!-- Source: https://www.osha.gov/personal-protective-equipment -->
+          <p>The Occupational Safety and Health Administration (OSHA) reports that proper PPE use can <span class="stat-highlight stat-tooltip">prevent up to 70% of workplace injuries<span class="tooltip-content">Source: OSHA</span></span>. Recognizing employees who model proper PPE usage encourages others to follow suit and creates a safety-conscious workforce.</p>
+
+          <h4>Economic Benefits of PPE Recognition</h4>
+          <!-- Source: https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line -->
+          <p>Companies with effective PPE recognition programs see <span class="stat-highlight stat-tooltip">40% lower workers' compensation costs<span class="tooltip-content">Source: National Safety Council</span></span> and <span class="stat-highlight stat-tooltip">85% higher safety suggestion rates<span class="tooltip-content">Source: Workplace Safety Research</span></span> according to the National Safety Council. Investing in PPE recognition pays dividends in both safety and financial outcomes.</p>
+
+          <h4>Creating Safety Role Models</h4>
+          <p>When employees are recognized for proper PPE usage, they become safety leaders. This peer recognition approach creates a positive feedback loop where safe behaviors are reinforced and celebrated, ultimately reducing workplace incidents and injuries.</p>
+          <p><span class="stat-highlight">Celebrate PPE champions</span> with recognition programs that highlight employees who consistently demonstrate proper equipment usage, maintenance, and safety leadership.</p>
+        `,
+        products: [
+          { name: "Safety Gear", image: "assets/images/PersonalProtectiveEquipment.png" },
+          { name: "Safety Awards", image: "assets/images/GlassAward.PNG" },
+          { name: "Recognition Badges", image: "assets/images/PinsAndBadges.PNG" },
+          { name: "Safety Apparel", image: "assets/images/Apparel2.png" }
+        ],
+        customizeProducts: [
+          { name: "Custom PPE Kits", image: "assets/images/kit1.PNG" },
+          { name: "Safety Bundles", image: "assets/images/bundle1.PNG" },
+          { name: "Recognition Merchandise", image: "assets/images/CustomizedTokens.png" },
+          { name: "Safety Accessories", image: "assets/images/UsefulUtilities.png" }
+        ]
+      },
       custom: {
         title: "Custom Recognition",
         icon: "fas fa-edit",
@@ -2200,6 +2283,7 @@ document.addEventListener('DOMContentLoaded', function() {
               // Get the feature name for this feature key
               const featureNameMap = {
                 'welcome': 'Welcome Kits',
+                'onboarding': 'Onboarding',
                 'service': 'Years of Service Recognition',
                 'performance': 'Performance Recognition',
                 'wellness': 'Wellness Programs',
@@ -2210,7 +2294,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 'incentives': 'Incentive Programs',
                 'attendance': 'Attendance Recognition',
                 'safety': 'Safety Recognition',
-                'community': 'Community Impact'
+                'community': 'Community Impact',
+                'number': 'Number of Days Since Incident',
+                'ppe': 'Personal Protective Equipment'
               };
               
               const featureName = featureNameMap[featureKey];
