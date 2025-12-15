@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vital Statistics - Employee Recognition Research</title>
+  <title>Number of Days Since Incident | Employee Recognition Programs</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -11,277 +11,92 @@
   <!-- Load centralized navigation BEFORE your main script -->
   <script src="navigation.js"></script>
   <script src="script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    .statistics-hero {
-      background: linear-gradient(135deg, #e5e7f0 0%, #eff0f5 100%);
-      color: #000000;
-      padding: 4rem 0;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .statistics-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, #eff0f5 0%, #8a8fa3 100%);
-      z-index: 1;
-    }
-
-    .statistics-hero .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .statistics-hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #000000;
-      font-weight: 700;
-    }
-
-    .statistics-hero p {
-      font-size: 1.25rem;
-      max-width: 800px;
-      margin: 0 auto;
-      color: #000000;
-      opacity: 0.8;
-    }
-
-    .statistics-content {
-      padding: 4rem 0;
-    }
-
-    .feature-section {
-      margin-bottom: 4rem;
-      background: white;
-      border-radius: 12px;
-      padding: 2.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-
-    .feature-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 3px solid var(--brand-orange);
-    }
-
-    .feature-header i {
-      font-size: 2.5rem;
-      color: var(--brand-orange);
-      margin-right: 1rem;
-    }
-
-    .feature-header h2 {
-      color: #000000;
-      font-size: 2.2rem;
-      margin: 0;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .stat-card {
-      background: white;
-      border-left: 5px solid var(--primary-color);
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-      border-left-color: var(--brand-orange);
-    }
-
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #000000;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
-
-    .stat-description {
-      font-size: 1.1rem;
-      color: #333;
-      margin-bottom: 1rem;
-      line-height: 1.4;
-    }
-
-    .stat-source {
-      font-size: 0.95rem;
-      color: #666;
-      font-style: italic;
-      background: white;
-      padding: 0.5rem;
-      border-radius: 4px;
-      border: 1px solid #e9ecef;
-    }
-
-    .source-link {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .source-link:hover {
-      text-decoration: underline;
-    }
-
-    .key-insights {
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 3rem 0;
-    }
-
-    .key-insights h3 {
-      color: #000000;
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    .insights-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .insight-item {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      border: 2px solid var(--primary-color);
-    }
-
-    .insight-item h4 {
-      color: #000000;
-      margin-bottom: 0.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .statistics-hero h1 {
-        font-size: 2.2rem;
-      }
-
-      .statistics-hero p {
-        font-size: 1.1rem;
-      }
-
-      .feature-section {
-        padding: 1.5rem;
-      }
-
-      .feature-header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .feature-header i {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-      }
-
-      .stat-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stat-number {
-        font-size: 2rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <!-- Navigation will be inserted here automatically by navigation.js -->
 
-  <main>
-    <section class="statistics-hero">
-      <div class="container">
-        <h1>Vital Statistics</h1>
-        <p>Research-backed data that proves the transformative power of employee recognition programs</p>
+  <main class="container">
+    <!-- Number of Days Since Incident Header -->
+    <section class="resources-header">
+      <div class="text-content">
+        <h1>Number of Days Since Incident</h1>
+        <p>Track and celebrate days without workplace incidents to build a proactive safety culture that protects employees and drives operational excellence.</p>
+        <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+          <button class="btn btn-primary-subtle"
+                  onclick="handleFeatureAdditionWithFeedback(this, event)"
+                  data-feature-name="Number of Days Since Incident"
+                  data-href="build-program.html"
+                  style="font-size: 1.1rem; padding: 0.8rem 1.6rem;">
+            <i class="fas fa-plus-circle"></i> Add to My Program
+          </button>
+          <a href="contact.html?inquiry=number-of-days" class="btn btn-outline">
+            <i class="fas fa-comments"></i> Chat with Our Experts
+          </a>
+        </div>
+      </div>
+      <img src="assets/images/UniqueTrophies.png" alt="Safety recognition trophies and awards for incident-free milestones.">
+    </section>
+
+    <!-- Why Incident-Free Days Matter -->
+    <section class="content-section">
+      <h2>Why Incident-Free Days Drive Safety Culture</h2>
+      <div class="main-grid">
+        <div class="info-card">
+          <i class="fas fa-chart-line card-icon"></i>
+          <h3>Reduce Workplace Incidents</h3>
+          <p>Organizations with robust safety recognition programs experience <strong style="color: var(--brand-orange);">52% fewer workplace incidents</strong> compared to those without such programs.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-dollar-sign card-icon"></i>
+          <h3>Massive Cost Savings</h3>
+          <p>Workplace injuries cost U.S. employers <strong style="color: var(--brand-orange);">$170 billion annually</strong> in lost productivity, medical expenses, and workers' compensation.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-users card-icon"></i>
+          <h3>Create Safety Champions</h3>
+          <p>Regular recognition of incident-free periods creates safety ambassadors throughout your organization who proactively identify hazards and maintain safe practices.</p>
+        </div>
+      </div>
+
+      <!-- CTA Link to Vital Statistics -->
+      <div class="section-cta">
+        <a href="vital-statistics.html" class="vital-stats-cta">
+          <i class="fas fa-chart-bar"></i>
+          See our Vital Statistics page for more safety data!
+        </a>
       </div>
     </section>
 
-    <section class="statistics-content">
-      <div class="container">
-        
-        <!-- Onboarding Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-gift"></i>
-            <h2>Onboarding</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">69%</span>
-              <div class="stat-description">of employees are more likely to remain with a company for up to three years if they experience great onboarding.</div>
-              <div class="stat-source">Source: <a href="https://www.shrm.org/hr-today/news/hr-magazine/pages/0914-onboarding.aspx" target="_blank" class="source-link">SHRM</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">54%</span>
-              <div class="stat-description">greater new-hire productivity experienced by organizations with a standard onboarding process.</div>
-              <div class="stat-source">Source: <a href="https://www.globenewswire.com/news-release/2011/11/17/459702/238734/en/Onboarding-2011-The-Path-to-Productivity.html" target="_blank" class="source-link">Aberdeen Group</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">50%</span>
-              <div class="stat-description">greater new-hire retention seen in organizations with a standard onboarding process.</div>
-              <div class="stat-source">Source: <a href="https://www.globenewswire.com/news-release/2011/11/17/459702/238734/en/Onboarding-2011-The-Path-to-Productivity.html" target="_blank" class="source-link">Aberdeen Group</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">90%</span>
-              <div class="stat-description">of new hires decide whether to stay with a company within their first six months, making effective onboarding critical.</div>
-              <div class="stat-source">Source: <a href="https://www.linkedin.com/pulse/employee-recognition-trends-2024-fostering-engagement-mudaliar-qzgxc" target="_blank" class="source-link">LinkedIn Employee Recognition Trends</a></div>
-            </div>
-          </div>
-        </div>
+    <!-- Safety Recognition Products -->
+    <section class="content-section">
+      <h2>Celebrate Safety Milestones</h2>
+      <p class="section-intro">
+        Discover our selection of safety awards and recognition items that celebrate incident-free records and honor workplace safety achievements.
+      </p>
 
-        <!-- Years of Service Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-calendar-alt"></i>
-            <h2>Years of Service</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">Up to 213%</span>
-              <div class="stat-description">of an employee's annual salary can be the cost of replacing them, making retention a financial imperative.</div>
-              <div class="stat-source">Source: <a href="https://www.americanprogress.org/article/there-are-significant-business-costs-to-replacing-employees/" target="_blank" class="source-link">Center for American Progress</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">31%</span>
-              <div class="stat-description">lower voluntary turnover is seen in companies with modern, effective recognition programs.</div>
-              <div class="stat-source">Source: <a href="https://www.forbes.com/sites/joshbersin/2012/06/13/new-research-unlocks-the-secret-of-employee-recognition/" target="_blank" class="source-link">Bersin by Deloitte</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">52%</span>
-              <div class="stat-description">less turnover among employees who participate in workplace giving and volunteer programs compared to those who don't.</div>
-              <div class="stat-source">Source: <a href="https://doublethedonation.com/corporate-volunteerism/" target="_blank" class="source-link">Corporate Volunteerism Research</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">65%</span>
-              <div class="stat-description">of job seekers actively look for employers with strong social consciousness and community involvement.</div>
-              <div class="stat-source">Source: <a href="https://doublethedonation.com/corporate-volunteerism/" target="_blank" class="source-link">PwC via Corporate Volunteerism Study</a></div>
-            </div>
-          </div>
+      <div class="compact-grid">
+        <div class="compact-card product-card" data-title="Safety Awards" data-img="assets/images/UniqueTrophies.png" data-desc="Custom safety trophies and awards that recognize teams and individuals for maintaining incident-free records. Perfect for milestone celebrations.">
+          <img src="assets/images/UniqueTrophies.png" alt="Safety Awards">
+          <h4>Safety Awards</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
         </div>
+        <div class="compact-card product-card" data-title="Custom Plaques" data-img="assets/images/PlaquesWithStands.png" data-desc="Personalized plaques that commemorate safety milestones and recognize the hard work that goes into maintaining incident-free workplaces.">
+          <img src="assets/images/PlaquesWithStands.png" alt="Custom Plaques">
+          <h4>Custom Plaques</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+        <div class="compact-card product-card" data-title="Safety Signage" data-img="assets/images/Signage.png" data-desc="Prominent safety signage that displays current incident-free days and celebrates ongoing safety achievements for all to see.">
+          <img src="assets/images/Signage.png" alt="Safety Signage">
+          <h4>Safety Signage</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+        <div class="compact-card product-card" data-title="Safety Apparel" data-img="assets/images/ApparelSweater.png" data-desc="Branded safety apparel that recognizes team members who contribute to maintaining incident-free work environments.">
+          <img src="assets/images/ApparelSweater.png" alt="Safety Apparel">
+          <h4>Safety Apparel</h4>
+          <button class="btn btn-outline btn-small view-details">View Details</button>
+        </div>
+      </div>
+    </section>
 
         <!-- Performance Bonuses Section -->
         <div class="feature-section">
@@ -615,91 +430,11 @@
           </div>
         </div>
 
-        <!-- Number of Days Since Incident Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-calendar-times"></i>
-            <h2>Number of Days Since Incident</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">52%</span>
-              <div class="stat-description">fewer workplace incidents are experienced by companies with robust safety recognition programs.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">$170B</span>
-              <div class="stat-description">annual cost of workplace injuries to U.S. employers in lost productivity, medical expenses, and workers' compensation.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">Weekly</span>
-              <div class="stat-description">recognition is most effective for reinforcing positive safety behaviors and making employees feel their contributions to workplace safety are valued.</div>
-              <div class="stat-source">Source: <a href="https://www.gallup.com/workplace/236441/ways-promote-employee-wellbeing.aspx" target="_blank" class="source-link">Gallup</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">85%</span>
-              <div class="stat-description">higher rate of safety suggestions in workplaces that actively recognize and reward safety contributions.</div>
-              <div class="stat-source">Source: <a href="https://www.workplacesafety.com/" target="_blank" class="source-link">Workplace Safety Research</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Personal Protective Equipment Section -->
-        <div class="feature-section">
-          <div class="feature-header">
-            <i class="fas fa-shield-alt"></i>
-            <h2>Personal Protective Equipment</h2>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-card">
-              <span class="stat-number">70%</span>
-              <div class="stat-description">of workplace injuries could be prevented with proper personal protective equipment usage.</div>
-              <div class="stat-source">Source: <a href="https://www.osha.gov/personal-protective-equipment" target="_blank" class="source-link">OSHA</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">40%</span>
-              <div class="stat-description">lower workers' compensation costs are reported by companies with strong safety recognition programs including PPE compliance.</div>
-              <div class="stat-source">Source: <a href="https://www.nsc.org/workplace/safety-topics/workplace-safety-and-its-impact-on-your-bottom-line" target="_blank" class="source-link">National Safety Council</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">85%</span>
-              <div class="stat-description">higher safety suggestion rates in workplaces that recognize proper PPE usage and maintenance.</div>
-              <div class="stat-source">Source: <a href="https://www.workplacesafety.com/" target="_blank" class="source-link">Workplace Safety Research</a></div>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">$3.27</span>
-              <div class="stat-description">average return for every $1 invested in workplace safety programs, including PPE training and recognition.</div>
-              <div class="stat-source">Source: <a href="https://www.cdc.gov/pcd/issues/2010/jul/10_0013.htm" target="_blank" class="source-link">CDC</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Key Insights Section -->
-        <div class="key-insights">
-          <h3>Key Insights from Recognition Data</h3>
-          <div class="insights-grid">
-            <div class="insight-item">
-              <h4>Recognition Drives Retention</h4>
-              <p>Companies with strong recognition programs see 31% lower turnover and employees are 5x more likely to stay when they feel appreciated.</p>
-            </div>
-            <div class="insight-item">
-              <h4>Immediate Impact Matters</h4>
-              <p>Immediate recognition increases behavior repetition by 70%, making spot recognition a powerful tool for reinforcing positive behaviors.</p>
-            </div>
-            <div class="insight-item">
-              <h4>Safety ROI</h4>
-              <p>Incident-free recognition reduces workplace incidents by 52% while PPE recognition prevents up to 70% of injuries, delivering $170B in annual cost savings for U.S. employers.</p>
-            </div>
-            <div class="insight-item">
-              <h4>Purpose-Driven Engagement</h4>
-              <p>83% of workers consider company purpose when choosing employers, and community impact programs drive 38% higher employee satisfaction.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    <!-- Next Step CTA Section -->
+    <div class="next-step-section next-step-within-products" style="background-color: transparent; padding-top: 1rem; padding-bottom: 2rem;">
+      <p>Ready to build a safer workplace culture? Let's discuss your safety recognition program!</p>
+      <a href="build-program.html" class="btn">Start Building Your Program</a>
+    </div>
   </main>
 
 
@@ -743,6 +478,12 @@
       observer.observe(card);
     });
   </script>
+
+  <button class="resources-sticky-cta" onclick="handleFeatureAdditionWithFeedback(this, event)" data-feature-name="Number of Days Since Incident" data-href="build-program.html">
+    <i class="fas fa-plus-circle"></i>
+    Add Number of Days Since Incident to My Program
+  </button>
+
   <script src="modal.js"></script>
   <script src="footer.js"></script>
 </body>
