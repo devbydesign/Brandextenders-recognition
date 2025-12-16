@@ -1421,19 +1421,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return title;
         });
-        
+
         if (selectedModuleNames.length === 0) {
             alert('Please add at least one module to your program plan.');
             return;
         }
+
 
         if(planSummarySection) {
             const summaryLogo = `<img src="assets/images/Logo.png" alt="BRANDEXTENDERS Logo" style="max-width: 200px; margin-bottom: 20px;">`;
             const whatsNext = `
                 <h3>What's Next:</h3>
                 <ul>
-                    <li>We are generating a mailto link for you to send your plan.</li>
-                    <li>We'll reach out shortly after receiving your email!</li>
+                    <li>Your plan has been submitted and we'll review it shortly.</li>
+                    <li>We'll reach out to you soon with recommendations!</li>
                 </ul>`;
             
             const summaryTitle = planSummarySection.querySelector('.summary-header h2');
@@ -1568,13 +1569,6 @@ document.addEventListener('DOMContentLoaded', function() {
             planSummarySection.scrollIntoView({ behavior: 'smooth' });
         }
         
-        const subject = `Program Plan Submission from ${firstName} ${lastName}`;
-        const body = `New Program Plan Request:\n\nSelected Modules:\n- ${selectedModuleNames.join('\n- ')}\n\nContact Information:\nName: ${firstName} ${lastName}\nCompany: ${companyName}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}`;
-        const mailtoLink = `mailto:chrisw@brandextenders.com,rbadiner@rbbmarketing.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        setTimeout(() => {
-            window.location.href = mailtoLink;
-        }, 1000);
 
         generateCaptcha();
       });
