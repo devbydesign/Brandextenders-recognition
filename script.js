@@ -612,8 +612,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isAlreadyAdded) {
           modalAddToProgram.innerHTML = '✓ Added';
           modalAddToProgram.disabled = true;
-          modalAddToProgram.style.setProperty('background-color', '#CF0545', 'important');
-          modalAddToProgram.style.setProperty('border-color', '#CF0545', 'important');
+          modalAddToProgram.style.setProperty('background-color', '#D61e3e', 'important');
+          modalAddToProgram.style.setProperty('border-color', '#D61e3e', 'important');
           modalAddToProgram.style.setProperty('color', 'white', 'important');
           modalAddToProgram.style.setProperty('opacity', '1', 'important');
         } else {
@@ -933,8 +933,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalAddToProgram.innerHTML = '<i class="fas fa-check"></i> Added';
                 modalAddToProgram.classList.add('added');
                 modalAddToProgram.disabled = true;
-                modalAddToProgram.style.setProperty('background-color', '#CF0545', 'important');
-                modalAddToProgram.style.setProperty('border-color', '#CF0545', 'important');
+                modalAddToProgram.style.setProperty('background-color', '#D61e3e', 'important');
+                modalAddToProgram.style.setProperty('border-color', '#D61e3e', 'important');
                 modalAddToProgram.style.setProperty('color', 'white', 'important');
                 modalAddToProgram.style.setProperty('opacity', '1', 'important');
               }
@@ -1856,7 +1856,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       spot: {
         title: "Spot Recognition",
-        icon: "fas fa-star",
+        icon: "fas fa-asterisk",
         description: `
           <p>Spot recognition allows managers and peers to acknowledge exceptional performance in real-time. Whether it's staying late to get the job done or stepping up during a staffing gap, this immediate, meaningful feedback energizes employees and reinforces positive behavior.</p>
           
@@ -1903,7 +1903,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       points: {
         title: "Point-Based Rewards",
-        icon: "fas fa-star-half-alt",
+        icon: "fas fa-asterisk-half-alt",
         description: `
           <p>Point-based reward systems create flexible, engaging experiences that allow employees to earn points for reaching milestones, demonstrating leadership, or meeting departmental goals, then choose rewards that truly matter to them. This approach maximizes satisfaction while minimizing administrative overhead.</p>
           
