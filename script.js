@@ -1759,9 +1759,9 @@ document.addEventListener('DOMContentLoaded', function() {
           <p><span class="stat-highlight">Design your onboarding experience</span> to integrate new hires with training programs, branded merchandise, information packets, and all essentials to start their journey successfully.</p>
         `,
         products: [
-          { name: "Tote Bag", image: "assets/images/tote1.jpg" },
+          { name: "WaterProof Cooler", image: "assets/images/WaterProofCooler.jpg" },
           { name: "Welcome Kit", image: "assets/images/kit1.PNG" },
-          { name: "Travel Bag", image: "assets/images/travelbag1.jpg" },
+          { name: "Carhartt Washed Duck", image: "assets/images/CarharttWashedDuck.jpg" },
           { name: "Complete Kit", image: "assets/images/BrandMErchandise2.png" }
         ],
         customizeProducts: [
@@ -2007,8 +2007,8 @@ document.addEventListener('DOMContentLoaded', function() {
         products: [
           { name: "Insulated Drinkware", image: "assets/images/InsulatedDrinkware4.png" },
           { name: "Point System", image: "assets/images/Points.jpg" },
-          { name: "Lunch Cooler", image: "assets/images/LunchCooler2.png" },
-          { name: "Team Tech Items", image: "assets/images/TechItems2.png.png" }
+          { name: "InsulatedLunch Cooler", image: "assets/images/WaterProofCooler.jpg" },
+          { name: "Vented Hard Hats", image: "assets/images/EvolutionVentedHardHat.jpg" }
         ]
       },
       community: {
