@@ -11,8 +11,8 @@
   --success-color: #D61e3e; /* BRANDEXTENDERS Blue for checkmarks etc. */
   --offset-color: color-mix(in srgb, var(--primary-color), black 70%);
   --border-radius: 6px;
-  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-secondary: 'Georgia', serif; /* For select headings or accents */
+  --font-primary: 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: 'Bebas Neue', serif; /* For select headings or accents */
   --transition-speed: 0.3s;
   --section-padding: 4rem 0;
 }
@@ -57,10 +57,12 @@ img {
 
 /* Typography */
 h1, h2, h3 {
+  font-family: var(--font-secondary);
   margin-bottom: 1.5rem; /* More space after headings */
   line-height: 1.3;
   color: var(--primary-color);
   font-weight: 700; /* Bolder headings */
+  letter-spacing: 1px;
 }
 
 h1 {
