@@ -1759,9 +1759,9 @@ document.addEventListener('DOMContentLoaded', function() {
           <p><span class="stat-highlight">Design your onboarding experience</span> to integrate new hires with training programs, branded merchandise, information packets, and all essentials to start their journey successfully.</p>
         `,
         products: [
-          { name: "Tote Bag", image: "assets/images/tote1.jpg" },
+          { name: "WaterProof Cooler", image: "assets/images/WaterProofCooler.jpg" },
           { name: "Welcome Kit", image: "assets/images/kit1.PNG" },
-          { name: "Travel Bag", image: "assets/images/travelbag1.jpg" },
+          { name: "Carhartt Washed Duck", image: "assets/images/CarharttWashedDuck.jpg" },
           { name: "Complete Kit", image: "assets/images/BrandMErchandise2.png" }
         ],
         customizeProducts: [
@@ -2005,10 +2005,10 @@ document.addEventListener('DOMContentLoaded', function() {
           <p>When employees feel recognized for safety contributions, it creates psychological safety that encourages open communication about risks. Teams with safety recognition show <span class="stat-highlight stat-tooltip">43% better safety communication<span class="tooltip-content">Source: Industrial Psychology Research</span></span> and <span class="stat-highlight stat-tooltip">31% faster hazard resolution times<span class="tooltip-content">Source: Industrial Psychology Research</span></span>, according to industrial psychology research.</p>
         `,
         products: [
-          { name: "Insulated Drinkware", image: "assets/images/InsulatedDrinkware4.png" },
+          { name: "Insulated Drinkware", image: "assets/images/WaterBottle.jpg" },
           { name: "Point System", image: "assets/images/Points.jpg" },
-          { name: "Lunch Cooler", image: "assets/images/LunchCooler2.png" },
-          { name: "Team Tech Items", image: "assets/images/TechItems2.png.png" }
+          { name: "InsulatedLunch Cooler", image: "assets/images/WaterProofCooler.jpg" },
+          { name: "Vented Hard Hats", image: "assets/images/EvolutionVentedHardHat.jpg" }
         ]
       },
       community: {
@@ -2078,8 +2078,8 @@ document.addEventListener('DOMContentLoaded', function() {
         products: [
           { name: "Safety Awards", image: "assets/images/UniqueTrophies.png" },
           { name: "Custom Plaques", image: "assets/images/PlaquesWithStands.png" },
-          { name: "Safety Signage", image: "assets/images/Signage.png" },
-          { name: "Safety Apparel", image: "assets/images/ApparelSweater.png" }
+          { name: "Useful Safety Rewards", image: "assets/images/WaterProofCooler.jpg" },
+          { name: "Utility Awards", image: "assets/images/CedarCreekRecharchableFlash.png" }
         ],
         customizeProducts: [
           { name: "Safety Merchandise", image: "assets/images/Customized Merchandise.png" },
@@ -2107,10 +2107,10 @@ document.addEventListener('DOMContentLoaded', function() {
           <p><span class="stat-highlight">Celebrate PPE champions</span> with recognition programs that highlight employees who consistently demonstrate proper equipment usage, maintenance, and safety leadership.</p>
         `,
         products: [
-          { name: "Safety Gear", image: "assets/images/PersonalProtectiveEquipment.png" },
-          { name: "Safety Awards", image: "assets/images/GlassAward.PNG" },
-          { name: "Recognition Badges", image: "assets/images/PinsAndBadges.PNG" },
-          { name: "Safety Apparel", image: "assets/images/Apparel2.png" }
+          { name: "Safety Glasses", image: "assets/images/SentrySafetyGlasses.jpg" },
+          { name: "Weather Proof Ducks", image: "assets/images/CarharttWashedDuck.jpg" },
+          { name: "Vented Hard Hats", image: "assets/images/EvolutionVentedHardHat.jpg" },
+          { name: "Safety Vests", image: "assets/images/CornerStoneReflextiveVest.jpg" }
         ],
         customizeProducts: [
           { name: "Custom PPE Kits", image: "assets/images/kit1.PNG" },
